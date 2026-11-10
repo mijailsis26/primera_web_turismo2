@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Destinos por Departamento - Viajes Turísticos</title>
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <div class="logo">
+            <h1>Viajes Turísticos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="destinos.html" class="active">Destinos</a></li>
+                <li><a href="tour-detalle.html">Tours y paquetes</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO / CABECERA DE LA PÁGINA DESTINOS -->
+        <section class="destinos-hero">
+            <div class="hero-content">
+                <h1>Destinos Turísticos por Departamento</h1>
+                <p>Explora la riqueza cultural, natural e histórica de Bolivia organizada por sus departamentos.</p>
+            </div>
+        </section>
+
+        <!-- BARRA DE FILTROS Y BÚSQUEDA RÁPIDA -->
+        <section class="filtros-destinos">
+            <form class="bar-filtros">
+                <div class="grupo-filtro">
+                    <label for="departamento">Seleccionar Departamento:</label>
+                    <select id="departamento" name="departamento">
+                        <option value="">Todos los departamentos</option>
+                        <option value="la-paz">La Paz</option>
+                        <option value="potosi">Potosí</option>
+                        <option value="oruro">Oruro</option>
+                        <option value="cochabamba">Cochabamba</option>
+                        <option value="santa-cruz">Santa Cruz</option>
+                        <option value="tarija">Tarija</option>
+                    </select>
+                </div>
+
+                <div class="grupo-filtro">
+                    <label for="tipo-turismo">Tipo de Experiencia:</label>
+                    <select id="tipo-turismo" name="tipo">
+                        <option value="">Todas las experiencias</option>
+                        <option value="aventura">Aventura y Naturaleza</option>
+                        <option value="cultural">Cultura e Historia</option>
+                        <option value="gastronomico">Ruta Gastronómica</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-filtrar">Filtrar Destinos</button>
+            </form>
+        </section>
+
+        <!-- CATÁLOGOS AGRUPADOS POR DEPARTAMENTO -->
+        <section class="catalogo-departamentos">
+            
+            <!-- DEPARTAMENTO: TARIJA -->
+            <div class="bloque-departamento" id="tarija">
+                <h2 class="titulo-departamento">📍 Tarija</h2>
+                <div class="contenedor-grid">
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="aranjuez.jpg" alt="Ruta del Vino y Singani">
+                        </div>
+                        <div class="card-body">
+                            <h3>Ruta del Vino y El Valle de la Concepción</h3>
+                            <p class="descripcion">Recorrido por bodegas de vinos de gran altura, catas dirigidas y el ambiente hospitalario del sur boliviano.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">4 Tours Disponibles</span>
+                                <a href="tour-detalle.html#tarija" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- DEPARTAMENTO: LA PAZ -->
+            <div class="bloque-departamento" id="la-paz">
+                <h2 class="titulo-departamento">📍 La Paz</h2>
+                <div class="contenedor-grid">
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="titicaca.jpg" alt="Lago Titicaca e Isla del Sol">
+                        </div>
+                        <div class="card-body">
+                            <h3>Lago Titicaca e Isla del Sol</h3>
+                            <p class="descripcion">Navega por el lago navegable más alto del mundo y recorre las ruinas e itinerarios sagrados de los Incas.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">5 Tours Disponibles</span>
+                                <a href="tour-detalle.html#la-paz-titicaca" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="tiwanaku.jpg" alt="Ruinas de Tiwanaku">
+                        </div>
+                        <div class="card-body">
+                            <h3>Tiwanaku y Valle de la Luna</h3>
+                            <p class="descripcion">Descubre el misterio de una de las culturas preincaicas más avanzadas y las formaciones geológicas de la ciudad.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">3 Tours Disponibles</span>
+                                <a href="tour-detalle.html#la-paz-tiwanaku" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="yungas.jpg" alt="Coroico y los Yungas">
+                        </div>
+                        <div class="card-body">
+                            <h3>Coroico y Los Yungas</h3>
+                            <p class="descripcion">Transición al subtropical, vegetación exuberante y actividades de aventura como el ciclismo por el Camino de la Muerte.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">4 Tours Disponibles</span>
+                                <a href="tour-detalle.html#la-paz-coroico" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- DEPARTAMENTO: POTOSÍ -->
+            <div class="bloque-departamento" id="potosi">
+                <h2 class="titulo-departamento">📍 Potosí</h2>
+                <div class="contenedor-grid">
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="uyuni.jpg" alt="Salar de Uyuni">
+                        </div>
+                        <div class="card-body">
+                            <h3>Salar de Uyuni y Lagunas de Colores</h3>
+                            <p class="descripcion">El desierto de sal más grande del mundo, paisajes volcánicos, géiseres y flamencos.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">3 Tours Disponibles</span>
+                                <a href="tour-detalle.html#potosi-salar-de-uyuni" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="potosi-ciudad.jpg" alt="Villa Imperial de Potosí">
+                        </div>
+                        <div class="card-body">
+                            <h3>Villa Imperial y Cerro Rico</h3>
+                            <p class="descripcion">Recorre la Casa de la Moneda, las iglesias barrocas y la historia minera de la mítica ciudad imperial.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">3 Tours Disponibles</span>
+                                <a href="tour-detalle.html#potosi-villa-imperial" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- DEPARTAMENTO: ORURO -->
+            <div class="bloque-departamento" id="oruro">
+                <h2 class="titulo-departamento">📍 Oruro</h2>
+                <div class="contenedor-grid">
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="oruro.jpg" alt="Carnaval y Folclore de Oruro">
+                        </div>
+                        <div class="card-body">
+                            <h3>Ruta Folclórica y Santuario del Socavón</h3>
+                            <p class="descripcion">Sumérgete en la capital del folclore boliviano, la Majestuosa Diablada y el Santuario de la Virgen del Socavón.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">4 Tours Disponibles</span>
+                                <a href="tour-detalle.html#oruro-ruta-folclorica" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="sajama.jpg" alt="Parque Nacional Sajama">
+                        </div>
+                        <div class="card-body">
+                            <h3>Parque Nacional Sajama</h3>
+                            <p class="descripcion">Explora el pico más alto de Bolivia, termas naturales, bosques de queñuas y géiseres en el altiplano.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">3 Tours Disponibles</span>
+                                <a href="tour-detalle.html#oruro-sajama" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- DEPARTAMENTO: COCHABAMBA -->
+            <div class="bloque-departamento" id="cochabamba">
+                <h2 class="titulo-departamento">📍 Cochabamba</h2>
+                <div class="contenedor-grid">
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="torotoro.jpg" alt="Parque Nacional Torotoro">
+                        </div>
+                        <div class="card-body">
+                            <h3>Parque Nacional Torotoro</h3>
+                            <p class="descripcion">Cañones impresionantes, huellas de dinosaurios, cavernas y paleontología en la frontera con Potosí.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">4 Tours Disponibles</span>
+                                <a href="tour-detalle.html#cochabamba-torotoro" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="cochabamba-ciudad.jpg" alt="Valle Central y Gastronomía">
+                        </div>
+                        <div class="card-body">
+                            <h3>Valle Alto y Ruta Gastronómica</h3>
+                            <p class="descripcion">Disfruta de la capital gastronómica, el Cristo de la Concordia y los pintorescos pueblos del Valle Alto.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">3 Tours Disponibles</span>
+                                <a href="tour-detalle.html#cochabamba-valle-alto" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- DEPARTAMENTO: SANTA CRUZ -->
+            <div class="bloque-departamento" id="santa-cruz">
+                <h2 class="titulo-departamento">📍 Santa Cruz</h2>
+                <div class="contenedor-grid">
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="chiquitania.jpg" alt="Misiones Jesuitas">
+                        </div>
+                        <div class="card-body">
+                            <h3>Misiones Jesuitas de la Chiquitania</h3>
+                            <p class="descripcion">Pueblos patrimoniales con iglesias de madera tallada que conservan tradiciones y música barroca viva.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">4 Tours Disponibles</span>
+                                <a href="tour-detalle.html#santa-cruz-chiquitania" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-destino">
+                        <div class="card-imagen">
+                            <img src="samaipata.jpg" alt="El Fuerte de Samaipata">
+                        </div>
+                        <div class="card-body">
+                            <h3>Samaipata</h3>
+                            <p class="descripcion">El Fuerte de piedra grabado más grande del mundo y el clima fresco de los valles cruceños.</p>
+                            <div class="card-footer">
+                                <span class="tours-disponibles">3 Tours Disponibles</span>
+                                <a href="tour-detalle.html#santa-cruz-samaipata" class="btn-explorar">Ver Destino</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer>
+        <div class="footer-info">
+            <p><strong>Viajes Turísticos</strong> - Operador de Turismo</p>
+            <p>Teléfono: +591 2 2442727 | Email: info@viajesturisticos.com</p>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Viajes Turísticos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f0; 
+    /* Margen superior para que el contenido no quede oculto bajo la barra fija */
+    padding-top: 75px; 
+}
+
+/* ==========================================================================
+   1. BARRA DE NAVEGACIÓN
+   ================================================================---------- */
+header {
+    background-color: #3b5332; /* Verde bosque tradicional */
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #8c6239; /* Borde estilo tierra/madera */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cambiado de 100vw a 100% para evitar desbordes */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+    z-index: 1000;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los enlaces bajen si no caben en pantallas chicas */
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 15px; /* Reducido ligeramente para optimizar espacio */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #557545;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   2. SECCIÓN INICIO / SOBRE NOSOTROS Y POR QUÉ ELEGIRNOS
+   ================================================================---------- */
+#inicio {
+    padding: 30px 20px;
+    background: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #d4c5b9;
+    height: 100vh; 
+    font-size: 20px;
+}
+#inicio div {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sobre-nosotros, .porque-elegirnos {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+#inicio h2 {
+    color: #3b5332;
+    font-size: 3.1rem;
+    margin-bottom: rem;
+}
+
+.porque-elegirnos ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.porque-elegirnos li {
+    background-color: #f0f4ec;
+    border: 1px solid #c8d6bc;
+    padding: 15px;
+    width: 28%;
+    min-width: 220px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.porque-elegirnos h3 {
+    color: #557545;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* ==========================================================================
+   3. SECCIÓN DESTINOS (DESTINOS DESTACADOS Y CATÁLOGO)
+   ================================================================---------- */
+#destinos, .catalogo-departamentos, .destinos-hero {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destinos-hero {
+    background-color: #557545;
+    color: white;
+    padding: 50px 20px;
+}
+
+.grid-destinos, .contenedor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card-destino {
+    background-color: #ffffff;
+    border: 2px solid #c8d6bc;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card-destino img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card-destino h3 {
+    color: #3b5332;
+    margin: 10px 0 5px 0;
+}
+
+.card-destino p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.card-destino a, .btn-explorar {
+    display: inline-block;
+    background-color: #8c6239; /* Color tierra para botones */
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card-destino a:hover {
+    background-color: #6b4a2a;
+}
+
+/* Agrupación por departamento en página secundaria */
+.bloque-departamento {
+    margin-bottom: 40px;
+}
+
+.titulo-departamento {
+    background-color: #d4c5b9;
+    color: #3b5332;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* ==========================================================================
+   4. SECCIÓN BUSCADOR DE DESTINOS Y PAQUETES
+   ================================================================---------- */
+#tours-paquetes, .filtros-destinos {
+    background-color: #e5ece0;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #c8d6bc;
+    border-bottom: 2px solid #c8d6bc;
+}
+
+.buscador-tours, .bar-filtros {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #b2c4a3;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.campo-busqueda, .grupo-filtro {
+    flex: 1;
+    min-width: 180px;
+    text-align: left;
+}
+
+.campo-busqueda label, .grupo-filtro label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3b5332;
+}
+
+.campo-busqueda select, .campo-busqueda input, 
+.grupo-filtro select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.buscador-tours button, .btn-filtrar {
+    background-color: #3b5332;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.buscador-tours button:hover {
+    background-color: #2b3a25;
+}
+
+/* ==========================================================================
+   5. SECCIÓN DE CONTACTO Y DETALLE DE TOUR 
+   ================================================================---------- */
+#contacto {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    height: 100vh;
+    font-size: 20px;
+}
+#contacto h2 {
+    margin: 10rem auto 0 auto;
+    font-size: 3rem;
+}
+.form-contacto {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+
+.form-contacto div {
+    margin-bottom: 15px;
+}
+
+.form-contacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-contacto input, 
+.form-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-contacto button {
+    background-color: #8c6239;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-contacto button:hover {
+    background-color: #6b4a2a;
+}
+
+/* Breadcrumb (Migas de pan) con contraste */
+.breadcrumb {
+    background-color: #3b5332;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb a, 
+.breadcrumb span {
+    color: #f4f6f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: #d4c5b9;
+}
+
+/* Cabecera del Tour */
+
+.tour-header {
+    background-color: #f0f4ec;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-left: 5px solid #3b5332;
+    border-bottom: 3px solid #8c6239;
+    text-align: left;
+    color: #2b3a25;
+    position: static; 
+}
+
+.tour-header h2 {
+    color: #3b5332;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.tour-header .ubicacion {
+    color: #557545;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tour-header .tour-highlights {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tour-header .tour-highlights span {
+    color: #2b3a25;
+    font-size: 14px;
+}
+
+.tour-galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 20px auto;
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: nowrap; 
+    overflow-x: auto;  
+    padding-bottom: 5px;
+}
+
+.tour-galeria img {
+    width: 280px;      
+    height: 180px;     
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #c8d6bc;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;    
+}
+
+.contenedor-tour-detalle {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.tour-info {
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Tarjeta de reserva */
+.tour-booking-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #ffffff;
+    border: 2px solid #c8d6bc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    height: fit-content;
+    text-align: left;
+}
+
+.tour-booking-card h3 {
+    color: #3b5332;
+    margin-top: 0;
+    font-size: 20px;
+    border-bottom: 2px solid #f0f4ec;
+    padding-bottom: 10px;
+}
+
+.tour-booking-card .precio-big {
+    font-size: 22px;
+    font-weight: bold;
+    color: #8c6239;
+    margin: 15px 0;
+}
+
+.tour-booking-card label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2b3a25;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.tour-booking-card input,
+.tour-booking-card select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #c8d6bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.tour-booking-card .btn-reservar {
+    background-color: #8c6239;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.tour-booking-card .btn-reservar:hover {
+    background-color: #6b4a2a;
+}
+
+/* ==========================================================================
+   6. PIE DE PÁGINA (FOOTER)
+   ================================================================---------- */
+footer {
+    background-color: #2b3a25;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+
+.footer-copy {
+    color: #b2c4a3;
+    font-size: 12px;
+}
+
+/* ==========================================================================
+   7. MEDIA QUERIES (RESPONSIVE DESIGN PARA MÓVILES)
+   ================================================================---------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    body {
+        padding-top: 110px; 
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+    }
+
+    .porque-elegirnos ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .porque-elegirnos li {
+        width: 90%;
+    }
+}

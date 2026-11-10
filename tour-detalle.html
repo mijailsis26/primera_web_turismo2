@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tours y Paquetes por Departamento - Viajes Turísticos</title>
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <div class="logo">
+            <h1>Viajes Turísticos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="index.html#tours-paquetes">Tours y paquetes</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ==========================================
+             DEPARTAMENTO: TARIJA
+        ========================================== -->
+        <section class="departamento-tours" id="tarija">
+            <h1 class="titulo-departamento-seccion">📍 Tours en Tarija</h1>
+
+            <article class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#tarija">Tarija</a> &gt; 
+                    <span>Ruta del Vino y El Valle de la Concepción</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Ruta del Vino y El Valle de la Concepción</h2>
+                    <p class="ubicacion">📍 Tarija, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 1 Día</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Compartido / Privado</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 80</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="aranjuez.jpg" alt="Ruta del Vino en Tarija">
+                    </div>
+                    <div class="imagenes-secundarias">
+                        <img src="bodega-tarija.jpg" alt="Bodega de vino en Tarija">
+                        <img src="valle-concepcion.jpg" alt="Valle de la Concepción">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Recorrido por bodegas de vinos de gran altura, catas dirigidas y el ambiente hospitalario del sur boliviano.</p>
+                        </section>
+
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1: Valle de la Concepción y Bodegas</h4>
+                                <p>Visita guiada a viñedos, degustación de vinos y singanis de altura, y almuerzo tradicional en la región.</p>
+                            </div>
+                        </section>
+
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ El paquete incluye:</h4>
+                                <ul>
+                                    <li>Transporte turístico</li>
+                                    <li>Guía especializado en enología</li>
+                                    <li>Catas y degustación de vinos</li>
+                                </ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul>
+                                    <li>Almuerzo y compras personales</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$80 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-tarija">Fecha de viaje:</label>
+                            <input type="date" id="fecha-tarija" name="fecha" required>
+                            <label for="pasajeros-tarija">Pasajeros:</label>
+                            <input type="number" id="pasajeros-tarija" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================
+             DEPARTAMENTO: LA PAZ
+        ========================================== -->
+        <section class="departamento-tours" id="la-paz">
+            <h1 class="titulo-departamento-seccion">📍 Tours en La Paz</h1>
+
+            <!-- Tour 1: Titicaca -->
+            <article id="la-paz-titicaca" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#la-paz">La Paz</a> &gt; 
+                    <span>Lago Titicaca e Isla del Sol</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Lago Titicaca e Isla del Sol</h2>
+                    <p class="ubicacion">📍 Copacabana, La Paz, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 2 Días / 1 Noche</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Compartido</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 140</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="titicaca.jpg" alt="Lago Titicaca">
+                    </div>
+                    <div class="imagenes-secundarias">
+                        <img src="isla-del-sol.jpg" alt="Isla del Sol">
+                        <img src="copacabana.jpg" alt="Copacabana">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Navega por el lago navegable más alto del mundo y recorre las ruinas e itinerarios sagrados de los Incas.</p>
+                        </section>
+
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1: Copacabana e Isla del Sol</h4>
+                                <p>Viaje a Copacabana, navegación en lancha a la Isla del Sol y caminata por las escalinatas del Inca.</p>
+                            </div>
+                            <div class="dia-itinerario">
+                                <h4>Día 2: Retorno a La Paz</h4>
+                                <p>Visita al santuario y tiempo libre antes de retornar a La Paz.</p>
+                            </div>
+                        </section>
+
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ El paquete incluye:</h4>
+                                <ul>
+                                    <li>Transporte y lancha a la isla</li>
+                                    <li>1 noche de hospedaje</li>
+                                </ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul>
+                                    <li>Ingresos a sitios arqueológicos</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span id="costo-viaje">$140 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-titicaca">Fecha de viaje:</label>
+                            <input type="date" id="fecha-titicaca" name="fecha" required>
+                            <label for="pasajeros-titicaca">Pasajeros:</label>
+                            <input type="number" id="pasajeros-titicaca" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+
+            <!-- Tour 2: Tiwanaku -->
+            <article id="la-paz-tiwanaku" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#la-paz">La Paz</a> &gt; 
+                    <span>Tiwanaku y Valle de la Luna</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Tiwanaku y Valle de la Luna</h2>
+                    <p class="ubicacion">📍 La Paz, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 1 Día</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Privado</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 75</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="tiwanaku.jpg" alt="Tiwanaku">
+                    </div>
+                    <div class="imagenes-secundarias">
+                        <img src="valle-luna.jpg" alt="Valle de la Luna">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Descubre el misterio de una de las culturas preincaicas más avanzadas y las formaciones geológicas de la ciudad.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1: Ruinas arqueológicas y formaciones geológicas</h4>
+                                <p>Visita guiada al complejo de Tiwanaku y recorrido por el Valle de la Luna.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Transporte privado y guía</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Entradas</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$75 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-tiw">Fecha:</label>
+                            <input type="date" id="fecha-tiw" name="fecha" required>
+                            <label for="pax-tiw">Pasajeros:</label>
+                            <input type="number" id="pax-tiw" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+
+            <!-- Tour 3: Yungas -->
+            <article id="la-paz-coroico" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#la-paz">La Paz</a> &gt; 
+                    <span>Coroico y Los Yungas</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Coroico y Los Yungas</h2>
+                    <p class="ubicacion">📍 La Paz, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 1 Día</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Aventura</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 90</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="yungas.jpg" alt="Yungas">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Transición al subtropical, vegetación exuberante y actividades de aventura como el ciclismo por el Camino de la Muerte.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1: Descenso a Coroico</h4>
+                                <p>Viaje desde la cumbre hacia los valles cálidos de los Yungas.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Transporte y almuerzo</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Equipo extra de ciclismo</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$90 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-yun">Fecha:</label>
+                            <input type="date" id="fecha-yun" name="fecha" required>
+                            <label for="pax-yun">Pasajeros:</label>
+                            <input type="number" id="pax-yun" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================
+             DEPARTAMENTO: POTOSÍ
+        ========================================== -->
+        <section class="departamento-tours" id="potosi">
+            <h1 class="titulo-departamento-seccion">📍 Tours en Potosí</h1>
+
+            <!-- Tour 1: Salar de Uyuni -->
+            <article id="potosi-salar-de-uyuni" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#potosi">Potosí</a> &gt; 
+                    <span>Salar de Uyuni </span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Salar de Uyuni y Lagunas de Colores</h2>
+                    <p class="ubicacion">📍 Potosí, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 2 Días / 1 Noche</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Privado / Compartido</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 250</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="uyuni.jpg" alt="Salar de Uyuni">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>El desierto de sal más grande del mundo, paisajes volcánicos, géiseres y flamencos.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1 y 2: Travesía por el Salar e Isla Incahuasi</h4>
+                                <p>Visita al cementerio de trenes, Colchani, cruce del salar y hospedaje en hotel de sal.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Transporte 4x4, guía y hospedaje</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Entradas a parques</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$250 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-uyu">Fecha:</label>
+                            <input type="date" id="fecha-uyu" name="fecha" required>
+                            <label for="pax-uyu">Pasajeros:</label>
+                            <input type="number" id="pax-uyu" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+
+            <!-- Tour 2: Potosí Ciudad -->
+            <article id="potosi-villa-imperial" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#potosi">Potosí</a> &gt; 
+                    <span>Villa Imperial y Cerro Rico</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Villa Imperial y Cerro Rico</h2>
+                    <p class="ubicacion">📍 Potosí, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 1 Día</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Histórico</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 65</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="potosi-ciudad.jpg" alt="Potosí">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Recorre la Casa de la Moneda, las iglesias barrocas y la historia minera de la mítica ciudad imperial.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1: Centro histórico y minas</h4>
+                                <p>Recorrido por la Casa Nacional de la Moneda y alrededores del Cerro Rico.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Guía local y entradas principales</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Almuerzo</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$65 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-pot">Fecha:</label>
+                            <input type="date" id="fecha-pot" name="fecha" required>
+                            <label for="pax-pot">Pasajeros:</label>
+                            <input type="number" id="pax-pot" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================
+             DEPARTAMENTO: ORURO
+        ========================================== -->
+        <section class="departamento-tours" id="oruro">
+            <h1 class="titulo-departamento-seccion">📍 Tours en Oruro</h1>
+
+            <!-- Tour 1: Oruro Folclore -->
+            <article id="oruro-ruta-folclorica" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#oruro">Oruro</a> &gt; 
+                    <span>Ruta Folclórica y Santuario del Socavón</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Ruta Folclórica y Santuario del Socavón</h2>
+                    <p class="ubicacion">📍 Oruro, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 1 Día</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Cultural</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 55</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="oruro.jpg" alt="Oruro">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Sumérgete en la capital del folclore boliviano, la Majestuosa Diablada y el Santuario de la Virgen del Socavón.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1: Visita al templo y talleres artesanales</h4>
+                                <p>Recorrido por el santuario y muestras de trajes típicos del Carnaval de Oruro.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Guía y transporte local</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Gastos personales</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$55 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-oru">Fecha:</label>
+                            <input type="date" id="fecha-oru" name="fecha" required>
+                            <label for="pax-oru">Pasajeros:</label>
+                            <input type="number" id="pax-oru" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+
+            <!-- Tour 2: Parque Nacional Sajama -->
+            <article id="oruro-sajama" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#oruro">Oruro</a> &gt; 
+                    <span>Parque Nacional Sajama</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Parque Nacional Sajama</h2>
+                    <p class="ubicacion">📍 Oruro, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 3 Días / 2 Noches</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Aventura / Ecoturismo</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 190</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="sajama.jpg" alt="Sajama">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Explora el pico más alto de Bolivia, termas naturales, bosques de queñuas y géiseres en el altiplano.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1 a 3: Volcán Sajama y Aguas Termales</h4>
+                                <p>Caminatas guiadas por géiseres, bosques de queñuas y baños termales medicinales.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Transporte 4x4, alimentación y hospedaje básico</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Entrada al parque</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$190 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-saj">Fecha:</label>
+                            <input type="date" id="fecha-saj" name="fecha" required>
+                            <label for="pax-saj">Pasajeros:</label>
+                            <input type="number" id="pax-saj" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================
+             DEPARTAMENTO: COCHABAMBA
+        ========================================== -->
+        <section class="departamento-tours" id="cochabamba">
+            <h1 class="titulo-departamento-seccion">📍 Tours en Cochabamba</h1>
+
+            <!-- Tour 1: Torotoro -->
+            <article id="cochabamba-torotoro" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#cochabamba">Cochabamba</a> &gt; 
+                    <span>Parque Nacional Torotoro</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Parque Nacional Torotoro</h2>
+                    <p class="ubicacion">📍 Cochabamba, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 2 Días / 1 Noche</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Aventura</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 160</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="torotoro.jpg" alt="Torotoro">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Cañones impresionantes, huellas de dinosaurios, cavernas y paleontología en la frontera con Potosí.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1 y 2: Cavernas y Huellas Fosilizadas</h4>
+                                <p>Exploración de la caverna de Umajalanta y cañón de Torotoro.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Transporte, guía y hospedaje</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Boleto de ingreso al parque</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$160 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-tor">Fecha:</label>
+                            <input type="date" id="fecha-tor" name="fecha" required>
+                            <label for="pax-tor">Pasajeros:</label>
+                            <input type="number" id="pax-tor" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+
+            <!-- Tour 2: Cochabamba Ciudad y Valle -->
+            <article id="cochabamba-valle-alto" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#cochabamba">Cochabamba</a> &gt; 
+                    <span>Valle Alto y Ruta Gastronómica</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Valle Alto y Ruta Gastronómica</h2>
+                    <p class="ubicacion">📍 Cochabamba, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 1 Día</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Gastronómico</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 50</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="cochabamba-ciudad.jpg" alt="Cochabamba">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Disfruta de la capital gastronómica, el Cristo de la Concordia y los pintorescos pueblos del Valle Alto.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1: Tradición y Gastronomía</h4>
+                                <p>Visita al Cristo de la Concordia y tour culinario por Tarata.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Transporte y almuerzo típico</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Bebidas extras</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$50 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-cba">Fecha:</label>
+                            <input type="date" id="fecha-cba" name="fecha" required>
+                            <label for="pax-cba">Pasajeros:</label>
+                            <input type="number" id="pax-cba" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================
+             DEPARTAMENTO: SANTA CRUZ
+        ========================================== -->
+        <section class="departamento-tours" id="santa-cruz">
+            <h1 class="titulo-departamento-seccion">📍 Tours en Santa Cruz</h1>
+
+            <!-- Tour 1: Misiones Jesuitas -->
+            <article id="santa-cruz-chiquitania" class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#santa-cruz">Santa Cruz</a> &gt; 
+                    <span>Misiones Jesuitas de la Chiquitania</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Misiones Jesuitas de la Chiquitania</h2>
+                    <p class="ubicacion">📍 Santa Cruz, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 3 Días / 2 Noches</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Cultural</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 310</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="chiquitania.jpg" alt="Chiquitania">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>Pueblos patrimoniales con iglesias de madera tallada que conservan tradiciones y música barroca viva.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1 al 3: Ruta Misional</h4>
+                                <p>Recorrido por San Javier, Concepción y templos de la región.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Transporte, hospedaje y guías</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Entradas a museos</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$310 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-chi">Fecha:</label>
+                            <input type="date" id="fecha-chi" name="fecha" required>
+                            <label for="pax-chi">Pasajeros:</label>
+                            <input type="number" id="pax-chi" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+
+            <!-- Tour 2: Samaipata -->
+            <article id="santa-cruz-samaipata"class="tour-item">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt; 
+                    <a href="destinos.html#santa-cruz">Santa Cruz</a> &gt; 
+                    <span>Samaipata</span>
+                </nav>
+
+                <header class="tour-header">
+                    <h2>Samaipata</h2>
+                    <p class="ubicacion">📍 Santa Cruz, Bolivia</p>
+                    <div class="tour-highlights">
+                        <span>⏱️ <strong>Duración:</strong> 1 Día</span>
+                        <span>👥 <strong>Tipo de servicio:</strong> Arqueología</span>
+                        <span>🏷️ <strong>Desde:</strong> $USD 85</span>
+                    </div>
+                </header>
+
+                <div class="tour-galeria">
+                    <div class="imagen-principal">
+                        <img src="samaipata.jpg" alt="Samaipata">
+                    </div>
+                </div>
+
+                <div class="contenedor-tour-detalle">
+                    <div class="tour-info">
+                        <section class="descripcion">
+                            <h3>Descripción del Tour</h3>
+                            <p>El Fuerte de piedra grabado más grande del mundo y el clima fresco de los valles cruceños.</p>
+                        </section>
+                        <section class="itinerario">
+                            <h3>Itinerario Detallado</h3>
+                            <div class="dia-itinerario">
+                                <h4>Día 1: El Fuerte y Pueblo</h4>
+                                <p>Visita guiada al sitio arqueológico y tiempo libre en el pueblo.</p>
+                            </div>
+                        </section>
+                        <section class="incluye-no-incluye">
+                            <div class="incluye">
+                                <h4>✅ Incluye:</h4>
+                                <ul><li>Transporte y almuerzo</li></ul>
+                            </div>
+                            <div class="no-incluye">
+                                <h4>❌ No incluye:</h4>
+                                <ul><li>Entrada al sitio arqueológico</li></ul>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="tour-booking-card">
+                        <h3>Reserva tu Tour</h3>
+                        <p class="precio-big">Desde <span>$85 USD</span> / persona</p>
+                        <form class="form-reserva">
+                            <label for="fecha-sam">Fecha:</label>
+                            <input type="date" id="fecha-sam" name="fecha" required>
+                            <label for="pax-sam">Pasajeros:</label>
+                            <input type="number" id="pax-sam" name="pasajeros" min="1" value="1" required>
+                            
+                            <p class="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-top: 10px; margin-bottom: 5px; font-size: 13px;">
+                                ¡Solicitud de reserva enviada con éxito!
+                            </p>
+                            <button type="submit" class="btn-reservar">Solicitar Reserva</button>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer>
+        <div class="footer-info">
+            <p><strong>Viajes Turísticos</strong> - Operador de Turismo</p>
+            <p>Teléfono: +591 2 2442727 | Email: info@viajesturisticos.com</p>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Viajes Turísticos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

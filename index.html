@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Viajes Turísticos</title>
+</head>
+<body>
+
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <header>
+        <div class="logo">
+            <h1>Viajes Turísticos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="tour-detalle.html">Tours y paquetes</a></li>
+                
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. SECCIÓN: SOBRE LA EMPRESA Y POR QUÉ ELEGIRNOS -->
+        <section id="inicio">
+            <div>
+            <article class="sobre-nosotros">
+                <h2>Sobre nosotros</h2>
+                <p>Somos una agencia de viajes dedicada a ofrecer experiencias inolvidables a nuestros clientes, conectándote con la cultura, historia y naturaleza de cada destino.</p>
+            </article>
+
+            <article class="porque-elegirnos">
+                <h2>¿Por qué elegirnos?</h2>
+                <ul>
+                    <li>
+                        <h3>Experiencia y Trayectoria</h3>
+                        <p>Diseñamos viajes exclusivos adaptados a tus gustos y necesidades.</p>
+                    </li>
+                    <li>
+                        <h3>Atención Personalizada</h3>
+                        <p>Asesoramiento completo en hospedaje, transporte e itinerarios a tu medida.</p>
+                    </li>
+                    <li>
+                        <h3>Destinos Únicos</h3>
+                        <p>Acceso a las mejores atracciones, eventos locales y guías especializados.</p>
+                    </li>
+                </ul>
+            </article>
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN: RESUMEN DE DESTINOS -->
+        <section id="destinos">
+            <h2>Destinos Destacados</h2>
+            <p>Descubre los mejores lugares para tu próximo viaje.</p>
+            
+            <div class="grid-destinos">
+                <article class="card-destino">
+                    <img src="tarija.png" alt="Lugares turísticos de Tarija">
+                    <h3>Tarija</h3>
+                    <p>Descubre la rica cultura, los viñedos y paisajes de Tarija.</p>
+                    <a href="destinos.html#tarija">Ver detalles</a>
+                </article>
+
+                <article class="card-destino">
+                    <img src="oruro1.png" alt="Lugares turísticos de Oruro">
+                    <h3>Oruro</h3>
+                    <p>Sumérgete en la tradición, el folclore y la historia de Oruro.</p>
+                    <a href="destinos.html#oruro">Ver detalles</a>
+                </article>
+
+                <article class="card-destino">
+                    <img src="potosi.png" alt="Lugares turísticos de Potosí">
+                    <h3>Potosí</h3>
+                    <p>Maravíllate con el Salar de Uyuni y la riqueza colonial de Potosí.</p>
+                    <a href="destinos.html#potosi">Ver detalles</a>
+                </article>
+
+                <article class="card-destino">
+                    <img src="santacruz.png" alt="Lugares turísticos de Santa Cruz">
+                    <h3>Santa Cruz</h3>
+                    <p>Explora la biodiversidad y los sitios históricos de Santa Cruz.</p>
+                    <a href="destinos.html#santa-cruz">Ver detalles</a>
+                </article>
+
+                <article class="card-destino">
+                    <img src="lapaz.png" alt="Lugares turísticos de La Paz">
+                    <h3>La Paz</h3>
+                    <p>Descubre los paisajes naturales de La Paz.</p>
+                    <a href="destinos.html#la-paz">Ver detalles</a>
+                </article>
+
+                <article class="card-destino">
+                    <img src="cochabamba.png" alt="Lugares turísticos de Cochabamba">
+                    <h3>Cochabamba</h3>
+                    <p>Experimenta la hospitalidad, el clima y la gastronomía local en Cochabamba.</p>
+                    <a href="destinos.html#cochabamba">Ver detalles</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN: BUSCADOR DE DESTINOS Y PAQUETES -->
+        <section id="tours-paquetes">
+            <h2>Busca tu Próxima Aventura</h2>
+            <p>Encuentra el tour o paquete perfecto según tus preferencias.</p>
+            
+            <form class="buscador-tours">
+                <div class="campo-busqueda">
+                    <label for="buscar-destino">¿Dónde quieres ir?</label>
+                    <select id="buscar-destino" name="destino">
+                        <option value="">Todos los destinos</option>
+                        <option value="tarija">Tarija</option>
+                        <option value="oruro">Oruro</option>
+                        <option value="potosi">Potosí</option>
+                        <option value="santa-cruz">Santa Cruz</option>
+                        <option value="la-paz">La Paz</option>
+                        <option value="cochabamba">Cochabamba</option>
+                    </select>
+                </div>
+
+                <div class="campo-busqueda">
+                    <label for="tipo-experiencia">Tipo de experiencia</label>
+                    <select id="tipo-experiencia" name="experiencia">
+                        <option value="">Todas las experiencias</option>
+                        <option value="aventura">Aventura y Ciclismo</option>
+                        <option value="cultura">Cultura e Historia</option>
+                        <option value="gastronomia">Gastronomía</option>
+                        <option value="ecotour">Ecoturismo</option>
+                    </select>
+                </div>
+
+                <div class="campo-busqueda">
+                    <label for="fecha-arribo">Fecha de viaje</label>
+                    <input type="date" id="fecha-arribo" name="fecha">
+                </div>
+
+                <button type="submit">Buscar Paquetes</button>
+            </form>
+        </section>
+
+        <!-- 5. SECCIÓN DE CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o deseas un itinerario personalizado, no dudes en escribirnos.</p>
+            
+            <!-- Ejemplo de cómo debería estar tu formulario en index.html -->
+    <form id="form-contacto" class="form-contacto">
+        <div>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+        </div>
+        <p id="mensaje-exito" style="display: none; color: #3b5332; font-weight: bold; margin-bottom: 10px;">
+        ¡Se envió el mensaje con éxito!
+        </p>
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+        </section>
+    </main>
+
+    <!-- 6. PIE DE PÁGINA (FOOTER) -->
+    <footer>
+        <div class="footer-info">
+            <p><strong>Viajes Turísticos</strong> - Operador de Turismo</p>
+            <p>Teléfono: +591 2 2442727 | Email: info@viajesturisticos.com</p>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Viajes Turísticos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
